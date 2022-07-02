@@ -10,7 +10,6 @@ li {
 
 li a {
     display: block;
-    padding: 30px;
     font-family: sans-serif;
 }
 
@@ -51,17 +50,35 @@ ul {
     top: 0;
     width: 100%;
     min-height: 75px;
-    background-color: #DDDCDE;
+    background-color: #f1f1f1;
     box-shadow: 0 1.25rem 1.25rem -1rem rgba(55, 56, 58, 0.2);
     z-index: 10;
     font-family: calibri;
 }
 
+nav ul li {
+    border-bottom: 2px solid transparent;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+	border-bottom: 2px solid #f38630;
+}
+
+.navul {
+    font-size: 1.3rem;
+    display: flex;
+    gap: 1.5rem;
+    padding-right: 9rem;
+}
+
 .container-hero {
     font-family: sans-serif;
-    margin-left: 10rem;
+    margin-left: 4rem;
     align-self: center;
 }
+
 
 .social-links {
     padding-top: 1rem;
@@ -96,15 +113,11 @@ ul {
 
 
 .name {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 span.typed {
     color: #1e62eb;
-}
-
-nav a:hover {
-    color: #990000;
 }
 
 @media screen and (max-width: 406px) {
@@ -136,7 +149,7 @@ html {
     justify-content: space-around;
     align-items: center;
     height: 100vh;
-    background-color: #DDDCDE;
+    background-color: #f1f1f1;
 }
 
 
