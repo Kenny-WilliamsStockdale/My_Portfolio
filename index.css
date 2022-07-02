@@ -182,11 +182,34 @@ nav ul li:hover {
 .p-design {
     display: flex;
     align-items: center;
+    line-height: 2;
+    padding-top: 5rem;
+}
+
+.design-img{
+    width: 50%;
+    height: auto;
+}
+
+.design-p{
+    text-align: left;
+    margin: 0 5rem;
 }
 
 .p-close {
     display: flex;
     align-items: center;
+    line-height: 2;
+    padding-top: 5rem;
+}
+
+.close-img{
+    width: 50%;
+    height: auto;
+}
+
+.close-p{
+    text-align: left;
 }
 
 .h2projects {
