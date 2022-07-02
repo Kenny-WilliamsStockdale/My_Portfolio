@@ -13,18 +13,6 @@ li a {
     font-family: sans-serif;
 }
 
-/* h1 {
-    font-size: 80px;
-    font-weight: 600;
-    margin: 5%;
-} */
-
-@media (max-width: 650px) {
-    h1 {
-        font-size: 5rem;
-    }
-}
-
 h2 {
     font-family: sans-serif;
 }
@@ -34,100 +22,15 @@ a {
     text-decoration: none;
 }
 
-
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-
-}
-
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    top: 0;
-    width: 100%;
-    min-height: 75px;
-    background-color: #f1f1f1;
-    box-shadow: 0 1.25rem 1.25rem -1rem rgba(55, 56, 58, 0.2);
-    z-index: 10;
-    font-family: calibri;
-}
-
-nav ul li {
-    border-bottom: 2px solid transparent;
-    transition: all 200ms ease;
-    cursor: pointer;
-}
-
-nav ul li:hover {
-	border-bottom: 2px solid #f38630;
-}
-
-.navul {
-    font-size: 1.3rem;
-    display: flex;
-    gap: 1.5rem;
-    padding-right: 9rem;
-}
-
-.container-hero {
-    font-family: sans-serif;
-    margin-left: 4rem;
-    align-self: center;
-}
-
-
-.social-links {
-    padding-top: 1rem;
-}
-
-.mobile-Navigation {
-    display: none;
-}
-
-#hero {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    background-color: #f1f1f1;
-    z-index: 1;
-    justify-content: space-around;
-    /* background-image:
-        url(./Images/kisspng-color-curve-graphic-design-vector-curves-and-graphic-design-1050421.png); */
-    /* background-size: 100%; */
-}
-
-#hero::before {
-    content: "";
-    position: absolute;
-    width: 130%;
-    height: 100%;
-    z-index: -1;
-    background: url(./Images/kisspng-color-curve-graphic-design-vector-curves-and-graphic-design-1050421.png);
-    transform: translate(5%, 20%);
-    background-size: 100%;
-}
-
-
-.name {
-    font-size: 3.5rem;
 }
 
 span.typed {
     color: #1e62eb;
-}
-
-@media screen and (max-width: 406px) {
-    li a {
-        padding: 10px;
-    }
-
-    #hero::before {
-        width: 200%;
-    }
 }
 
 body {
@@ -143,6 +46,83 @@ html {
     overflow-x: hidden;
 }
 
+nav ul li {
+    border-bottom: 2px solid transparent;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid #f38630;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    background-color: #f1f1f1;
+    box-shadow: 0 1.25rem 1.25rem -1rem rgba(55, 56, 58, 0.2);
+    z-index: 10;
+    font-family: calibri;
+}
+
+.navul {
+    font-size: 1.3rem;
+    display: flex;
+    gap: 1.5rem;
+    padding-right: 9rem;
+}
+
+.container-hero {
+    font-family: sans-serif;
+    margin-left: 4rem;
+    align-self: center;
+}
+
+.social-links {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.fa-brands.fa-facebook-f {
+    margin-left: 0.5rem;
+}
+
+.fa-brands.fa-github {
+    margin-left: 0.5rem;
+}
+
+.mobile-Navigation {
+    display: none;
+}
+
+#hero {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    background-color: #f1f1f1;
+    z-index: 1;
+    justify-content: space-around;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 100%;
+    z-index: -1;
+    background: url(./Images/kisspng-color-curve-graphic-design-vector-curves-and-graphic-design-1050421.png);
+    transform: translate(5%, 20%);
+    background-size: 100%;
+}
+
+.name {
+    font-size: 3.5rem;
+}
+
 #welcome-section {
     display: flex;
     flex-direction: row;
@@ -151,7 +131,6 @@ html {
     height: 100vh;
     background-color: #f1f1f1;
 }
-
 
 .welcome-img {
     margin-top: 2rem;
@@ -163,8 +142,18 @@ html {
 
 .h2story {
     text-align: center;
-    font-family: calibri;
     padding-top: 6%;
+    font-family: sans-serif;
+}
+
+.story-line {
+    width: 180px;
+    height: 3px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border: 0;
+    background-color: #f38630;
+    margin-top: 0.3rem;
 }
 
 #my-story {
@@ -173,6 +162,31 @@ html {
     font-size: 20px;
     text-align: center;
     padding-top: 3%;
+}
+
+.p-study {
+    display: flex;
+    align-items: center;
+    line-height: 2;
+}
+
+.study-img{
+    width: 50%;
+    height: auto;
+}
+
+.study-p{
+    text-align: left;
+}
+
+.p-design {
+    display: flex;
+    align-items: center;
+}
+
+.p-close {
+    display: flex;
+    align-items: center;
 }
 
 .h2projects {
@@ -427,5 +441,21 @@ html {
         display: block;
         color: #f38630;
         text-decoration: none;
+    }
+
+    @media (max-width: 650px) {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+
+    @media screen and (max-width: 406px) {
+        li a {
+            padding: 10px;
+        }
+
+        #hero::before {
+            width: 200%;
+        }
     }
 }
