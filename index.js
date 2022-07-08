@@ -6,3 +6,8 @@ var typed = new Typed('.typed', {
   loop: true,
   startDelay: 100,
 });
+
+// close mobile navigation input checkbox function on check vanilla js only
+function closeNav() {
+  document.getElementById('nav-check').checked = false;
+}

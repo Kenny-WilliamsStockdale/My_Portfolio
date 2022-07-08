@@ -29,12 +29,12 @@
   <!-- ======= Mobile Navigation Section ======= -->
   <section class="mobile-Navigation">
     <label>
-      <input type="checkbox">
+      <input id="nav-check" type="checkbox">
       <span class="menu"> <span class="hamburger"></span> </span>
       <ul class="list">
-        <li> <a href="#">Home</a> </li>
-        <li> <a href="#">About</a> </li>
-        <li> <a href="#">Contact</a> </li>
+        <li> <a onclick="closeNav()" href="#navigation">Home</a> </li>
+        <li> <a onclick="closeNav()" href="#about">About</a> </li>
+        <li> <a onclick="closeNav()" href="#contact">Contact</a> </li>
       </ul>
     </label>
   </section><!-- End Mobile Navigation -->
@@ -46,10 +46,11 @@
       <p>I'm a <span class="typed"></span></p>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/kenny-stockdale-8061431b3/" class="linkedin"><i
-            class="fa-brands fa-linkedin-in"></i></a>
+            class="fa-brands fa-linkedin"></i></a>
         <a href="https://www.facebook.com/kenny.stockdale.1" class="facebook"><i
-            class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://github.com/Kenny-WilliamsStockdale" class="GitHub"><i class="fa-brands fa-github"></i></a>
+            class="fa-brands fa-facebook-square"></i></a>
+        <a href="https://github.com/Kenny-WilliamsStockdale" class="GitHub"><i
+            class="fa-brands fa-github-square"></i></a>
       </div>
     </div>
     <div>
@@ -108,14 +109,14 @@
   <!--End About-->
 
   <!-- ======= Projects Section ======= -->
-  <section id="projects">
+  <!-- <section id="projects">
     <h2 class="h2projects">My Projects:</h2>
-    <div class="project-links">
-      <!-- <a href="https://armageddonpaintball.nz/home" target="_blank" class="project-details-arma">
+    <div class="project-links"> -->
+  <!-- <a href="https://armageddonpaintball.nz/home" target="_blank" class="project-details-arma">
         <img class="project-icon-arma" id="arma" src="/Images/New Armageddon Logo 2018(black).png"
           alt="Armageddon Paintball" />
       </a> -->
-
+  <!--
       <a href="https://www.w3schools.com/css/" target="_blank" class="project-details">
         <img class="project-icon" src="/Images/CSS.png" alt="CSS logo" />
       </a>
@@ -124,26 +125,26 @@
         <img class="project-icon" src="/Images/Html5.png" alt="Html5 logo" />
       </a>
     </div>
-  </section>
+  </section> -->
   <!--End Projects-->
 
   <!-- ======= Contact Section ======= -->
   <section id="contact">
     <div class="contact-links">
       <a href="https://www.linkedin.com/in/kenny-stockdale-8061431b3/" target="_blank" class="contact-details">
-        <i class="fa-brands fa-linkedin-in"></i>
+        <button class="btn btn-icons"><i class="fa-brands fa-linkedin-in"></i></button>
       </a>
 
       <a href="https://github.com/Kenny-WilliamsStockdale" target="_blank" class="contact-details">
-        <i class="fa-brands fa-github"></i>
+        <button class="btn btn-icons"><i class="fa-brands fa-github"></i></button>
       </a>
 
       <a href="https://www.facebook.com/kenny.stockdale.1" target="_blank" class="contact-details">
-        <i class="fa-brands fa-facebook-f"></i>
+        <button class="btn btn-icons"><i class="fa-brands fa-facebook-f"></i></button>
       </a>
     </div>
-
     <footer>
+      <hr class="footer-line">
       <p class="p-footer">
         &copy;Copyright 2022, Designed by Kenny Stockdale.
       </p>
