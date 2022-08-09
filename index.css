@@ -51,6 +51,211 @@ nav ul li:hover {
     border-bottom: 2px solid #f38630;
 }
 
+/* Main Section Start */
+/*
+body {
+    background: #000;
+    font-family: 'Oswald', sans-serif;
+} */
+
+#splash-text {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgb(102, 102, 102);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#splash-icons {
+    padding-bottom: 1rem;
+}
+
+.fa-solid {
+    color: #f38630;
+    padding: 0 1rem;
+}
+
+#splash-h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 40px;
+}
+
+.line {
+    width: 1000px;
+    height: 5px;
+    background: #f38630;
+    position: sticky;
+    /* top: 50%; */
+}
+
+#line_r {
+    animation: line_r_animation 3s infinite;
+    -webkit-animation: line_r_animation 3s infinite;
+}
+
+#line_l {
+    animation: line_l_animation 5s infinite;
+    -webkit-animation: line_l_animation 5s infinite;
+}
+
+@-webkit-keyframes line_l_animation {
+    0% {
+        left: calc(2% + 50px);
+        width: 0px;
+    }
+
+    35% {
+        left: calc(2% + 0px);
+        width: 20rem;
+    }
+
+    70% {
+        left: calc(2% + 0px);
+        width: 0px;
+    }
+
+    100% {
+        left: calc(2% + 0px);
+        width: 0px;
+    }
+}
+
+@keyframes line_r_animation {
+    0% {
+        left: calc(2% + 50px);
+        width: 0px;
+    }
+
+    35% {
+        left: calc(2% + 0px);
+        width: 20rem;
+    }
+
+    70% {
+        left: calc(2% + 0px);
+        width: 0px;
+    }
+
+    100% {
+        left: calc(2% + 0px);
+        width: 0px;
+    }
+}
+
+@-webkit-keyframes line_r_animation {
+    0% {
+        right: calc(2% + 0px);
+        width: 0px;
+    }
+
+    35% {
+        right: calc(2% + 0px);
+        width: 0px;
+    }
+
+    70% {
+        right: calc(2% + 0px);
+        width: 0px;
+    }
+
+    100% {
+        right: calc(2% + 0px);
+        width: 0px;
+    }
+}
+
+@keyframes line_r_animation {
+    0% {
+        right: calc(2% + 0px);
+        width: 0px;
+    }
+
+    35% {
+        right: calc(2% + 0px);
+        width: 0px;
+    }
+
+    70% {
+        right: calc(2% + 0px);
+        width: 0px;
+    }
+
+    100% {
+        right: calc(2% + 0px);
+        width: 0px;
+    }
+}
+
+/* Main Section End */
+/* Scroll effect */
+.css-scroll-down {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    /* padding: 50px 30px; */
+    position: absolute;
+    top: 83vh;
+}
+
+/* .single-scroll-down-animation {
+    margin-right: 20px;
+    width: calc(25% - 20px);
+    margin-bottom: 50px;
+} */
+
+#splash-scroll {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.scroll-down5{
+    width: 2px;
+    height: 110px;
+    position: relative;
+    background: transparent;
+    animation: scrollDown5 1.5s ease infinite;
+    border-radius: 100%;
+}
+
+.scroll-down5:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(transparent, #f38630, transparent);
+}
+
+@keyframes scrollDown5{
+    0%{
+        transform-origin: top;
+        transform: scaleY(0);
+    }
+    45%{
+        transform-origin: top;
+        transform: scaleY(1);
+    }
+    55%{
+        transform-origin: bottom;
+        transform: scaleY(1);
+    }
+    100%{
+        transform-origin: bottom;
+        transform: scaleY(0);
+    }
+}
+
+/* End Scroll effect */
+
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -82,11 +287,11 @@ nav ul li:hover {
     font-size: 1.8rem;
 }
 
-.facebook{
+.facebook {
     padding-left: 1%;
 }
 
-.GitHub{
+.GitHub {
     padding-left: 1%;
 }
 
@@ -136,6 +341,7 @@ nav ul li:hover {
     height: auto;
     border-radius: 50%;
 }
+
 
 .h2story {
     text-align: center;
