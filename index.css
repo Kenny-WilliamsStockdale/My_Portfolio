@@ -30,7 +30,7 @@ ul {
 }
 
 span.typed {
-    color: #1e62eb;
+    color: #f38630;
 }
 
 body {
@@ -57,6 +57,128 @@ body {
     background: #000;
     font-family: 'Oswald', sans-serif;
 } */
+
+/* start of background animation */
+/* .area {
+    background: #f38630;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 100%;
+    height: 100vh;
+} */
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #f38630;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+/* end of background animation */
 
 #splash-text {
     display: flex;
@@ -203,12 +325,6 @@ body {
     top: 75%;
 }
 
-/* .single-scroll-down-animation {
-    margin-right: 20px;
-    width: calc(25% - 20px);
-    margin-bottom: 50px;
-} */
-
 #splash-scroll {
     text-transform: uppercase;
     font-weight: 700;
@@ -299,8 +415,7 @@ body {
 
 .fa-brands.fa-facebook-square:hover,
 .fa-brands.fa-linkedin:hover,
-.fa-brands.fa-github-square:hover
-{
+.fa-brands.fa-github-square:hover {
     transform: scale(1.3);
     transition: 0.3s ease-in-out;
     -webkit-transform: scale(1.3);
@@ -332,7 +447,7 @@ body {
     height: 100vh;
 }
 
-#hero::before {
+/* #hero::before {
     content: "";
     position: absolute;
     width: 130%;
@@ -341,7 +456,7 @@ body {
     background: url(./Images/kisspng-color-curve-graphic-design-vector-curves-and-graphic-design-1050421.png);
     transform: translate(5%, 20%);
     background-size: 100%;
-}
+} */
 
 .name {
     font-size: 3.5rem;
@@ -359,7 +474,7 @@ body {
 .welcome-img {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 50%;
 }
@@ -731,12 +846,13 @@ textarea:focus {
 }
 
 /* media queries */
-@media screen and (max-width:1150px){
+@media screen and (max-width:1150px) {
     #form-div {
         padding-left: 5em;
         padding-right: 5em;
     }
 }
+
 @media screen and (max-width: 835px) {
     #hero {
         display: flex;
@@ -768,7 +884,7 @@ textarea:focus {
         display: block;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        width: 20rem;
+        width: 17rem;
         height: auto;
         border-radius: 50%;
         margin-left: auto;
@@ -805,7 +921,7 @@ textarea:focus {
         left: 50px;
         width: 30px;
         height: 2px;
-        background: #1e62eb;
+        background: #f38630;
         display: block;
         -webkit-transform-origin: center;
         transform-origin: center;
@@ -822,7 +938,7 @@ textarea:focus {
         display: block;
         width: 100%;
         height: 100%;
-        background: #1e62eb;
+        background: #f38630;
     }
 
     label .hamburger:before {
