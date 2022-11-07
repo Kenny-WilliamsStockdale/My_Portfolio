@@ -85,7 +85,6 @@ body {
     background: #f38630;
     animation: animate 25s linear infinite;
     bottom: -150px;
-
 }
 
 .circles li:nth-child(1) {
@@ -172,10 +171,15 @@ body {
     }
 
     100% {
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
+        transform: translateY(-1200px) rotate(720deg);
+        opacity: 0.1;
         border-radius: 50%;
+        -webkit-transform: translateY(-1200px) rotate(720deg);
+        -moz-transform: translateY(-1200px) rotate(720deg);
+        -ms-transform: translateY(-1200px) rotate(720deg);
+        -o-transform: translateY(-1200px) rotate(720deg);
     }
+
 }
 
 /* end of background animation */
@@ -313,6 +317,7 @@ body {
         width: 0px;
     }
 }
+
 /* Main Section End */
 /* Scroll effect */
 .css-scroll-down {
@@ -856,17 +861,21 @@ textarea:focus {
 #about {
     background-color: #f0f0f0;
 }
+
 #form-main {
     background-color: #f0f0f0;
-    /* height: 100vh; */
 }
+
 /* About section end ---------------------------------- */
 
 /* Contact section ---------------------------------- */
 .contact-header {
     top: 50em;
     font-family: Verdana;
+    padding-bottom: 1em;
+    text-align: center;
 }
+
 /* Contact section end ---------------------------------- */
 
 /* media queries */
@@ -1142,6 +1151,7 @@ textarea:focus {
         padding-left: 3%;
         padding-right: 3%;
     }
+
     .h2story {
         text-align: center;
         padding-top: 25%;
