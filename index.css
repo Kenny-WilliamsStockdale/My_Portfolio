@@ -408,6 +408,14 @@ body {
     align-self: center;
 }
 
+.typewrite > .wrap {
+    border-right: 0.08em solid #f38630
+}
+
+.typewrite {
+    color: #f38630;
+}
+
 .social-links {
     padding-top: 1rem;
     font-size: 1.8rem;
@@ -726,7 +734,7 @@ body {
 }
 
 #form-div {
-    padding: 7em 15em 7em 15em;
+    padding: 7em 15em 9em 15em;
 }
 
 .feedback-input {
@@ -872,11 +880,169 @@ textarea:focus {
 .contact-header {
     top: 50em;
     font-family: Verdana;
-    padding-bottom: 1em;
     text-align: center;
 }
 
 /* Contact section end ---------------------------------- */
+
+/* Project section ---------------------------------- */
+.project-section {
+    background-color: #f0f0f0;
+}
+
+.organisations-title{
+    padding-top: 5em;
+    font-family: Verdana;
+    text-align: center;
+}
+
+.organisations-title2{
+    font-family: Verdana;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    place-items: center;
+    padding: 3em 1em;
+    grid-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#nisa-card {
+    background-image: url('./Images/NISA.jpg');
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#itp-card {
+    background-image: url('./Images/ITP.jpg');
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#web7-card {
+    background-image: url('./Images/WEB701-project.jpg');
+    cursor: pointer;
+    /* width: 16em; */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#armashop-card {
+    background-image: url('./Images/Armashop-project.jpg');
+    cursor: pointer;
+    /* width: 16em; */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card {
+    width: 250px;
+    padding-bottom: 250px;
+    perspective: 1000px;
+    transition: transform 0.35s;
+    position: relative;
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.0);
+    z-index: 2;
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    -o-transform: scale(1.0);
+}
+
+.card:hover .cover {
+    box-shadow: 10px 20px 32px 1px rgba(0, 0, 0, 0.75);
+    transition: none;
+}
+
+.card:hover .highlight {
+    opacity: 0.5;
+}
+
+.card-long {
+    width: 410px;
+    padding-bottom: 250px;
+    perspective: 1000px;
+    transition: transform 0.35s;
+    position: relative;
+    z-index: 1;
+}
+
+.card-long:hover {
+    transform: scale(1.0);
+    z-index: 2;
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    -o-transform: scale(1.0);
+}
+
+.card-long:hover .cover {
+    box-shadow: 10px 20px 32px 1px rgba(0, 0, 0, 0.75);
+    transition: none;
+}
+
+.card-long:hover .highlight {
+    opacity: 0.5;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-size: cover;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    will-change: transform;
+    transition: transform 0.5s, filter 0.35s;
+    z-index: 1;
+}
+
+.highlight {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    margin-top: -17em;
+    margin-left: -6em;
+    width: 20em;
+    height: 20em;
+    background: radial-gradient(circle farthest-corner at 50%,
+            rgba(255, 255, 255, 0.7) 0%,
+            rgba(255, 255, 255, 0.5) 33%,
+            rgba(255, 255, 255, 0) 60%,
+            rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+    will-change: transform;
+    transition: opacity 0.21s ease-in-out;
+}
+
+/* Project section end---------------------------------- */
 
 /* media queries */
 @media screen and (max-width:1150px) {
@@ -941,12 +1107,15 @@ textarea:focus {
         height: 200px;
         background: #FFF;
         border-radius: 50% 50% 50% 50%;
-        -webkit-transition: .5s ease-in-out;
-        transition: .4s ease-in-out;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
         box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
         cursor: pointer;
         overflow-y: hidden;
-    }
+        -moz-transition: 0.2s ease-in-out;
+        -ms-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+}
 
     label .hamburger {
         position: absolute;
@@ -1010,7 +1179,14 @@ textarea:focus {
 
     label input:checked+.menu+ul {
         opacity: 1;
-    }
+        transition: all 0.3s;
+        display: flex;
+        pointer-events: auto;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+}
 
     label ul {
         z-index: 200;
@@ -1020,15 +1196,16 @@ textarea:focus {
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         opacity: 0;
-        -webkit-transition: .35s 0s ease-in-out;
-        transition: .35s 0s ease-in-out;
+        -webkit-transition: .2s 0s ease-in-out;
+        transition: .2s 0s ease-in-out;
         display: flex;
         flex-direction: column;
         align-items: center;
-        -moz-transition: .35s 0s ease-in-out;
-        -ms-transition: .35s 0s ease-in-out;
-        -o-transition: .35s 0s ease-in-out;
-    }
+        pointer-events: none;
+        -moz-transition: .2s 0s ease-in-out;
+        -ms-transition: .2s 0s ease-in-out;
+        -o-transition: .2s 0s ease-in-out;
+}
 
     label a {
         margin-bottom: 1em;
@@ -1192,6 +1369,19 @@ textarea:focus {
         padding-top: 2rem;
     }
 }
+
+@media screen and (max-width: 470px) {
+    .cards-container {
+        padding: 3em 0;
+        }
+}
+
+/* @media screen and (max-width: 440px) {
+    .web7-card {
+        width: 100%;
+        height: 100%;
+        }
+} */
 
 @media screen and (max-width: 406px) {
     li a {
