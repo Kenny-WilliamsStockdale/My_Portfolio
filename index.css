@@ -963,7 +963,7 @@ textarea:focus {
 
 .card:hover {
     transform: scale(1.0);
-    z-index: 2;
+    z-index: 1;
     -webkit-transform: scale(1.0);
     -moz-transform: scale(1.0);
     -ms-transform: scale(1.0);
@@ -990,7 +990,7 @@ textarea:focus {
 
 .card-long:hover {
     transform: scale(1.0);
-    z-index: 2;
+    z-index: 1;
     -webkit-transform: scale(1.0);
     -moz-transform: scale(1.0);
     -ms-transform: scale(1.0);
