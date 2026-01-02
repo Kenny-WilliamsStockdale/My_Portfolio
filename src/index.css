@@ -911,7 +911,7 @@ textarea:focus {
 }
 
 #nisa-card {
-    background-image: url('./Images/NISA.jpg');
+    background-image: url('../images/NISA.jpg');
     cursor: pointer;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -921,7 +921,7 @@ textarea:focus {
 }
 
 #itp-card {
-    background-image: url('./Images/ITP.jpg');
+    background-image: url('../images/ITP.jpg');
     cursor: pointer;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -931,7 +931,7 @@ textarea:focus {
 }
 
 #web7-card {
-    background-image: url('./Images/WEB701-project.jpg');
+    background-image: url('../images/WEB701-project.jpg');
     cursor: pointer;
     /* width: 16em; */
     border-radius: 10px;
@@ -942,7 +942,7 @@ textarea:focus {
 }
 
 #armashop-card {
-    background-image: url('./Images/Armashop-project.jpg');
+    background-image: url('../images/Armashop-project.jpg');
     cursor: pointer;
     /* width: 16em; */
     border-radius: 10px;
@@ -1066,7 +1066,7 @@ textarea:focus {
         width: 150%;
         height: 100%;
         z-index: -1;
-        background: url(./Images/kisspng-color-curve-graphic-design-vector-curves-and-graphic-design-1050421.png);
+        background: url(./images/kisspng-color-curve-graphic-design-vector-curves-and-graphic-design-1050421.png);
         transform: translate(-15%, 61%);
         background-size: cover;
     }
